@@ -20,7 +20,7 @@
         $http.patch(`/classifieds/${vm.selectedPost.id}`, vm.selectedPost).then((result) => {
           console.log(result);
           $state.go("home");
-        })
-      };
+        });
+      }
     }
 }());

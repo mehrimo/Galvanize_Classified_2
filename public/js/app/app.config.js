@@ -13,21 +13,18 @@
           abstract: true,
           component: "app"
         })
-      $stateProvider
         .state({
           name: "home",
           parent: "app",
           url: "/",
           component: "home"
         })
-      $stateProvider
         .state({
           name: "newPost",
           parent: "app",
           url: "/new-post",
           component: "newPost"
         })
-        $stateProvider
         .state({
           name: "editPost",
           parent: "app",

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="app">
   <head>
-    <base href="/">
     <meta charset="utf-8">
     <title>Russo Classifieds</title>
     <!-- Styles -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- node module installs -->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="angular/angular.js"></script>
+  <script src="angular-ui-router/angular-ui-router.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <!-- Moment -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.js"></script>
+  <base href="/">
   </head>
   <body>
     <h1>Classifieds</h1>
 
       <ui-view></ui-view>
 
-
-
-  <script src="jquery/jquery.min.js"></script>
-  <script src="angular/angular.js"></script>
-  <script src="angular-ui-router/angular-ui-router.js"></script>
-  <script src="bootstrap/bootstrap.min.js"></script>
-  <!-- CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.js"></script>
-  <script src="js/app/app.module.js"></script>
+<!-- App scripts -->
+<script src="js/app/app.module.js"></script>
 <script src="js/app/app.config.js"></script>
 <script src="js/app/app.component.js"></script>
 <script src="js/home/home.component.js"></script>
-<script src="js/edit-ad/edit-ad.component.js"></script>
-<script src="js/new-ad/new-ad.component.js"></script>
+<script src="js/new-post/new-post.component.js"></script>
+<script src="js/edit-post/edit-post.component.js"></script>
   </body>
 </html>

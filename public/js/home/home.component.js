@@ -1,14 +1,14 @@
-'use strict';
 (function() {
+ "use strict";
   angular.module('app')
     .component('home', {
       templateUrl: 'js/home/home.template.html',
-      controller: controller
+      controller: homeController
     });
 
-    controller.$inject = ["$http", "$state", "$stateParams"]
+    homeController.$inject = ["$http", "$state", "$stateParams"]
 
-    function controller($http, $state, $stateParams) {
+    function homeController($http, $state, $stateParams) {
       const vm = this;
       vm.newPost = {};
       vm.sortCriteria = "-date";

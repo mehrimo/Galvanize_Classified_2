@@ -16,9 +16,10 @@
       vm.editPost = editPost
       vm.newPost = newPost
       vm.updateSort = updateSort
+      vm.$onInit = onInit
 
 
-      vm.$onInit = function() {
+      function onInit() {
         refreshPosts();
       };
 

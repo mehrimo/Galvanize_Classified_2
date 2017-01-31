@@ -22,17 +22,17 @@
         })
       $stateProvider
         .state({
-          name: "newAd",
+          name: "newPost",
           parent: "app",
-          url: "/new-ad",
-          component: "newAd"
+          url: "/new-post",
+          component: "newPost"
         })
         $stateProvider
         .state({
-          name: "editAd",
+          name: "editPost",
           parent: "app",
-          url: "/edit-ad",
-          component: "editAd",
+          url: "/edit-post",
+          component: "editPost",
           params: {
             selectedPost: {}
           }

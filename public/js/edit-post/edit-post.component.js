@@ -1,19 +1,21 @@
 (function() {
   "use strict";
   angular.module('app')
-    .component('editAd', {
-      templateUrl: 'js/edit-ad/edit-ad.template.html',
-      controller: controller
+    .component('editPost', {
+      templateUrl: 'js/edit-post/edit-post.template.html',
+      controller: postController
     });
 
-    controller.$inject = ["$http", "$state", "$stateParams"];
-    function controller($http, $state, $stateParams) {
+    postController.$inject = ["$http", "$state", "$stateParams"];
+    function postController($http, $state, $stateParams) {
       const vm = this;
+      vm.editPost = editPost
+
       vm.selectedPost = $stateParams.selectedPost;
       vm.$onInit = function() {
       };
 
-      vm.editAd = function() {
+      function editPost() {
         console.log(vm.selectedPost.id);
         $http.patch(`/classifieds/${vm.selectedPost.id}`, vm.selectedPost).then((result) => {
           console.log(result);

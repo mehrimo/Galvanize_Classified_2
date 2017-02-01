@@ -1,12 +1,16 @@
 (function() {
   'use strict';
+console.log('connected to app config');
 
   angular.module('app')
     .config(config)
 
     config.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"];
+
     function config($stateProvider, $urlRouterProvider, $locationProvider) {
-      $locationProvider.html5Mode(true);
+
+      $locationProvider.html5Mode(true)
+
       $stateProvider
         .state({
           name: "app",
@@ -15,8 +19,8 @@
         })
         .state({
           name: "home",
-          parent: "app",
           url: "/",
+          parent: "app",
           component: "home"
         })
         .state({

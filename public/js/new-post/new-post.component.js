@@ -2,7 +2,7 @@
   "use strict";
   angular.module('app')
     .component('newPost', {
-      templateUrl: '/js/new-post/new-post.template.html',
+      templateUrl: 'js/new-post/new-post.template.html',
       controller: newPostController
     });
 
@@ -17,6 +17,6 @@
           console.log(result);
           $state.go("home");
         });
-      };
+      }
     }
 }());
